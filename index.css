@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet');
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -21,7 +20,7 @@ color-emph {
     color: #798391;
 }
 
-normal {
+.normal {
     font-size: 15px;
 }
 
@@ -70,6 +69,14 @@ ul.no-bullets {
     margin: 0; /* Remove margins */
 }
 
+ul.no-bullets > li {
+    margin-bottom: 1.5em;
+}
+
+ul.no-bullets > li:last-child {
+    margin-bottom: 0;
+}
+
 .img-right {
     float: right;
     margin-top:0px;
@@ -96,4 +103,20 @@ ul.no-bullets {
 
 img{
     height: 250px;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .img-right {
+        float: none;
+        display: block;
+        width: 150px;
+        max-width: 50%;
+        min-width: 0;
+        margin: 0 0 1em 0;
+    }
 }
